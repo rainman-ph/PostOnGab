@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "ShareOnGab",
+  "version": "1.0",
+  "description": "Share links on gab.ai",
+  "icons": {
+    "48": "icons/G_icon1.png",
+    "32": "icons/G_icon1.png"
+  },
+
+  "permissions": [
+    "activeTab",
+     "https://gab.ai/posts",
+    "contextMenus"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/G_icon1.png",
+      "32": "icons/G_icon1.png"
+    }
+
+  },
+
+  "web_accessible_resources": [
+    "popup.html"
+  ]
+}

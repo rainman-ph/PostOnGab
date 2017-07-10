@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Share on gab.ai</title>
+
+<style>
+
+.sog_background
+{
+	width: 100%;
+	height: 100%;
+}
+.sog_dialog
+{
+	z-index: 2001; 
+	border-radius: 5px; 
+	border: 2px solid rgb(52, 207, 127); 
+	top: 50px; 
+	background: rgb(237, 238, 238) none repeat scroll 0% 0%; 
+	font-family: 'proxima-nova', 'helveticaneue-light', 'helvetica', sans-serif; 
+	font-size: 14px; 
+	width: 600px; 
+	line-height: 1.42857; 
+	visibility: visible;
+}
+
+.sog_credits
+{
+	color: white;    
+	display: inline;
+	background-color: rgb(42, 42, 42, 0.420); 
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	visibility: visible;
+}
+
+.sog_credits a:link {
+    color: red;
+}
+
+.sog_credits a:visited {
+    color: red;
+}
+
+.sog_textbox
+{
+	width: 100%; 
+	background: white;		    
+	padding: 15px;	        
+	padding-top: 15px;		    
+	    
+	resize: none;		    
+	border: 1px solid transparent;		    
+	font-size: 17px;		    
+	border-radius: 3px;		    
+	overflow: auto;		    
+	margin: 0;		    
+	-webkit-box-sizing: border-box;		    
+	-moz-box-sizing: border-box;		    
+	box-sizing: border-box;
+}
+
+.sog_button
+{
+	
+	letter-spacing: 3px;		
+	padding: 5px 20px;		
+	cursor: pointer;		
+	pointer-events: auto;		
+	font-size: 14px;		
+	line-height: 1.42857;		
+	font-weight: 300; 
+}
+
+.sog_button.cancel
+{
+	float: right; 
+	background-color: #34cf7f; 
+	color: white; 
+}
+
+.sog_title
+{
+	font-size: 17px;
+
+}
+
+.sog_count
+{
+	float: right;
+	padding: 7px 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+	<div id="sog_background" class="sog_background"></div>
+
+	<dialog id="share_on_gab" class="sog_dialog" open="">
+		<div class="sog_title">
+			<center>Share on gab.ai	</center>  
+		</div>
+		
+		<main>	  
+			<p><textarea id="s2g_textbox" name="s2g_tb" cols="80" rows="4" class="sog_textbox">		    
+				praise kek
+			</textarea>	</p> 	 
+		</main>	 
+
+		<div>
+			<input id="s2g_cancel" value="CANCEL" class="sog_button" type="button">	 
+			<input id="s2g_submit" value="SEND" class="sog_button cancel" type="button">
+			<small class="sog_count" id="s2g_count">420</small>
+		</div>
+
+	</dialog>
+
+	<div class = "sog_credits">
+		<center>
+		ShareOnGab by <a href="#" id="sog_gab_link" title="https://gab.ai/miraculix">Miraculix200</a> - Source code: <a title="https://github.com/Miraculix200/ShareOnGab" href="#" id="sog_git_link">Github</a>
+		</center>
+	</div>
+
+</body>
+</html>
