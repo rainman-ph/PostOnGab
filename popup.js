@@ -89,8 +89,8 @@ function addClickListeners()
 	let profile_link = gIdoc.getElementById("sog_gab_link"); 
 	let git_link = gIdoc.getElementById("sog_git_link"); 
 
-	profile_link.addEventListener("click", function() {  var win = window.open("https://gab.ai/miraculix", "_blank"); win.focus() });
-	git_link.addEventListener("click", function() {  var win = window.open("https://github.com/Miraculix200/ShareOnGab", "_blank"); win.focus() });
+	profile_link.addEventListener("click", function() {  var win = window.open("https://gab.com/tenkyuu", "_blank"); win.focus() });
+	git_link.addEventListener("click", function() {  var win = window.open("https://github.com/rainman-xx/PostOnGab", "_blank"); win.focus() });
 	cancel_button.addEventListener("click", function() { closeDialog(); });
 	submit_button.addEventListener("click", function() { submitGab(sog_textbox); });
 	bg.addEventListener("click", function() { closeDialog() });
