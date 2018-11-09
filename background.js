@@ -1,6 +1,6 @@
 /* 
 
-ShareOnGab by gab.ai/miraculix 2017
+Based on ShareOnGab by gab.ai/miraculix 2017
 
 */
 
@@ -86,7 +86,7 @@ function postGab(text)
                credentials: 'include',
                cache: 'no-cache' };
 
-  var req = new Request('https://gab.ai/posts', init);
+  var req = new Request('https://gab.com/posts', init);
 
   fetch(req).then(function(response) 
   {
@@ -117,7 +117,7 @@ function gabResponseReceived(response_text)
 
     sendMessageToPopupTab({notlogged: "Not logged in"});
     browser.tabs.create({
-      url:"https://gab.ai" //,
+      url:"https://gab.com" //,
     });
   } else {
     let response_json = null;
@@ -140,7 +140,7 @@ function gabResponseReceived(response_text)
     }
     if (response_json.published_at != null) 
     {
-      let gaburl = "https://gab.ai/" + response_json.actuser.username + "/posts/" + response_json.post.id;
+      let gaburl = "https://gab.com/" + response_json.actuser.username + "/posts/" + response_json.post.id;
       sendMessageToPopupTab({ok: gaburl});
       browser.tabs.create({
         url:gaburl //,
