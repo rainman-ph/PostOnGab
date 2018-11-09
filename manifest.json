@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "ShareOnGab",
+  "name": "PostOnGab",
   "version": "1.0",
-  "description": "Share links on gab.ai",
+  "description": "Share links on gab.com",
   "icons": {
     "48": "icons/G_icon1.png",
     "32": "icons/G_icon1.png"
@@ -10,7 +10,7 @@
 
   "permissions": [
     "activeTab",
-     "https://gab.ai/posts",
+     "https://gab.com/posts",
     "contextMenus"
   ],
 
